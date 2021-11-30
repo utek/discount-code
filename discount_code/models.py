@@ -28,6 +28,6 @@ class DiscountCode(BaseModel):
     brand_id: uuid.UUID
     code: str
     created: datetime.datetime
-    end_date: Optional[datetime.date] = None
+    expire: Optional[datetime.date] = None
     user_id: uuid.UUID
     value: condecimal(gt=0)
